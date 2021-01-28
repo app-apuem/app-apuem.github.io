@@ -31,7 +31,59 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZEPRDVXYRZ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
+            gtag("config", "G-ZEPRDVXYRZ");
+        </script>
+
+        
+        <style>
+            body {
+              background-image: url('../../images/background/snow-sea-m4vYr8h8lsQ-unsplash.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;  
+              background-size: cover;
+            }
+
+            .main {
+                width: 35vw;
+                margin-left: 10vw;
+            }
+
+            @media screen and (max-width: 1079px) {
+            .main {
+                width:45vw;
+                margin-left: 7,5vw;
+            }
+            }
+            @media screen and (max-width: 850px) {
+            .main {
+                width:90vw;
+                margin-left: 5vw;
+            }
+            }
+            .content::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* Hide scrollbar for IE, Edge and Firefox */
+            .content {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+            }
+</style>
+
+        
+        
+    </head>
+    <body>
         <!--<script>
             function logResults(json) {
                 console.log(json);
@@ -116,43 +168,6 @@
             });
 
         </script>
-        <style>
-            body {
-              background-image: url('../../images/background/snow-sea-m4vYr8h8lsQ-unsplash.jpg');
-              background-repeat: no-repeat;
-              background-attachment: fixed;  
-              background-size: cover;
-            }
-
-            .main {
-                width: 35vw;
-                margin-left: 10vw;
-            }
-
-            @media screen and (max-width: 1079px) {
-            .main {
-                width:45vw;
-                margin-left: 7,5vw;
-            }
-            }
-            @media screen and (max-width: 850px) {
-            .main {
-                width:90vw;
-                margin-left: 5vw;
-            }
-            }
-            .content::-webkit-scrollbar {
-                display: none;
-            }
-
-            /* Hide scrollbar for IE, Edge and Firefox */
-            .content {
-            -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
-            }
-</style>
-
-        </style>
         <div class="main" style="height: 80vh; margin-top: 10vh; border-radius: 20px !important; background-color: white;" class="bg-white border border-1">
             <div style="height: 10%;">
                 <h6 class="pt-4 px-5">IP Adress Analysis <span style="font-weight: 400;" class="text-secondary">by ipapi.co</span></h6>
@@ -237,43 +252,5 @@
                 }
                 }
         </script>
-        <script>
-
-                var more = "ASN: " + asn + "\n" + 
-                "Continent Code: " + continent_code + "\n" + 
-                "Country: " + country + "\n" + 
-                "Country Area: " + country_area + "\n" + 
-                "Country Calling Code: " + country_calling_code + "\n" + 
-                "Country Capital: " + country_capital + "\n" + 
-                "Country Code: " + country_code + "\n" + 
-                "Country Code (ISO3): " + country_code_iso3 + "\n" + 
-                "Country Population: " + country_population + "\n" + 
-                "Country TLD: " + country_tld + "\n" + 
-                "Currency: " + currency + "\n" + 
-                "Currency Name: " + currency_name + "\n" + 
-                "In EU: " + in_eu + "\n" + 
-                "Languages: " + languages + "\n" + 
-                "Latitude: " + latitude + "\n" + 
-                "Longitude: " + longitude + "\n" + 
-                "Region Code: " + region_code + "\n" + 
-                "Timezone: " + timezone + "\n" + 
-                "UTC Offset: " + utc_offset;
-
-                document.getElementById("more").innerHTML = more;
-        </script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZEPRDVXYRZ"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-
-            gtag("config", "G-ZEPRDVXYRZ");
-        </script>
-    </head>
-    <body>
-        <p title="description"></p>
     </body>
 </html>
